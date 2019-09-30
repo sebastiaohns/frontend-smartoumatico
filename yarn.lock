@@ -6156,6 +6156,11 @@ lodash._reinterpolate@~3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -8232,6 +8237,14 @@ react-app-polyfill@^1.0.3:
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
 
+react-countdown-now@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-countdown-now/-/react-countdown-now-2.1.1.tgz#88901eb776907338da137effbf7cdbec5b9274c6"
+  integrity sha512-DGSd/EGzigIsixQNzPQbk376zG49IVAyMCUkMgDEuIXlIRKQwB44Fg8uA3zrZ+aQVAuzsyb6fJWskPxIP56DYg==
+  dependencies:
+    lodash.isequal "^4.5.0"
+    prop-types "^15.7.2"
+
 react-dev-utils@^9.0.4:
   version "9.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.0.4.tgz#5c71a8e8afdec0232c44d4e049d21baa437a92af"
@@ -8263,7 +8276,7 @@ react-dev-utils@^9.0.4:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@16.10.1:
+react-dom@^16.10.1:
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.10.1.tgz#479a6511ba34a429273c213cbc2a9ac4d296dac1"
   integrity sha512-SmM4ZW0uug0rn95U8uqr52I7UdNf6wdGLeXDmNLfg3y5q5H9eAbdjF5ubQc3bjDyRrvdAB2IKG7X0GzSpnn5Mg==
@@ -8344,7 +8357,7 @@ react-scripts@3.1.2:
   optionalDependencies:
     fsevents "2.0.7"
 
-react@16.10.1:
+react@^16.10.1:
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.10.1.tgz#967c1e71a2767dfa699e6ba702a00483e3b0573f"
   integrity sha512-2bisHwMhxQ3XQz4LiJJwG3360pY965pTl/MRrZYxIBKVj4fOHoDs5aZAkYXGxDRO1Li+SyjTAilQEbOmtQJHzA==
