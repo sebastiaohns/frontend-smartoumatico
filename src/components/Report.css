@@ -1,0 +1,48 @@
+.Report {
+  max-width: 600px;
+  height: auto;
+  
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(54, 93, 204, 0.2);
+  
+  padding: 20px;
+}
+
+.Report ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Report li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Report li .Label, 
+.Report li .Data {
+  border-bottom: 1px solid #70707044;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+  color: #233E8A;
+  font-weight: 600; 
+}
+
+.Report li:last-child .Label,
+.Report li:last-child .Data {
+  border: none;
+}
+
+.Icon {
+  width: 30px;
+  height: 30px;  
+  margin-right: 20px;
+  fill: #365DCC;
+}
+
+.Label {
+  flex: 1;
+  text-align: left;  
+}

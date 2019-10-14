@@ -1,0 +1,36 @@
+.Container {
+  cursor: default;
+  margin: 20px;
+}
+
+.TitleCountDown {
+  font-size: 24px;
+  color: #707070;
+}
+
+.CountDown {
+  max-width: 600px;
+  max-height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(54, 93, 204, 0.2);
+  background-color: white;
+  padding: 20px;
+}
+
+.CountDown div {
+  display: inline-block;
+}
+
+.CountDown span {
+  font-size: 90px;
+  color: #233E8A;
+}
+
+.CountDown p {
+  font-size: 30px;
+  color: #707070;
+}
+
+.Day, .Hour, .Minute, .Second {
+  margin: 0px 25px;
+}
