@@ -37,7 +37,8 @@ export default function Report() {
           </li>
         </ul>
       </div>
-      <div className="Menu">
+
+      <div className="Month">
         <select name="Mês">
           <option value="Janeiro">Janeiro</option>
           <option value="Fevereiro">Fevereiro</option>
@@ -52,9 +53,8 @@ export default function Report() {
           <option value="Novembro">Novembro</option>
           <option value="Dezembro">Dezembro</option>
         </select>
+        <button type="submit">Baixar Relatório</button>
       </div>
-
-      <button className="Button" type="submit">Baixar Relatório</button>
     </section>
   );
 }
