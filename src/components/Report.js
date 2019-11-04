@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/styles.css';
 import './Report.css';
 
 import { Award, BookOpen, Flag, MessageCircle, Users } from 'react-feather';
@@ -7,39 +8,39 @@ export default function Report() {
 
   return (
     <section>
-      <div className="Report">
+      <div className="Container">
         <p className="Title">Quantidade de atividades enviadas para o SMART no mês de agosto</p>
         <ul>
           <li>
-            <Users className="Icon"/>
+            <Users className="ListIcon"/>
             <p className="Label">Profissionais Cadastrados</p>
-            <p>123</p>
+            <p>17</p>
           </li>
           <li>
-            <Flag className="Icon"/>
+            <Flag className="ListIcon"/>
             <p className="Label">Pontos Implantados</p>
-            <p>123</p>
+            <p>34</p>
           </li>
           <li>
-            <MessageCircle className="Icon"/>
+            <MessageCircle className="ListIcon"/>
             <p className="Label">Teleconsultorias Produzidas</p>
-            <p>123</p>
+            <p>3481</p>
           </li>
           <li>
-            <Award className="Icon"/>
-            <p className="Label">Atividades de Tele-educação Produzidas</p>
-            <p>11223</p>
+            <Award className="ListIcon"/>
+            <p className="Label">Atividades de Tele-educação</p>
+            <p>597</p>
           </li>
           <li>
-            <BookOpen className="Icon"/>
-            <p className="Label">Objetos de Aprendizagem Produzidos</p>
-            <p>123</p>
+            <BookOpen className="ListIcon"/>
+            <p className="Label">Objetos de Aprendizagem</p>
+            <p>850</p>
           </li>
         </ul>
       </div>
 
-      <div className="Month">
-        <select name="Mês">
+      <div className="Select">
+        <select>
           <option value="Janeiro">Janeiro</option>
           <option value="Fevereiro">Fevereiro</option>
           <option value="Março">Março</option>
@@ -53,7 +54,7 @@ export default function Report() {
           <option value="Novembro">Novembro</option>
           <option value="Dezembro">Dezembro</option>
         </select>
-        <button type="submit">Baixar Relatório</button>
+        <button className="Button BtnReport" type="submit">Baixar Relatório</button>
       </div>
     </section>
   );

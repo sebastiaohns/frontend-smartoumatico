@@ -8,3 +8,10 @@
   align-items: center;
   justify-content: space-around;
 }
+
+@media (max-width: 1024px) {
+  .App {
+    height: auto;
+    flex-direction: column;
+  }
+}

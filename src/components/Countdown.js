@@ -1,16 +1,18 @@
 import React from 'react';
 import Countdown from 'react-countdown-now';
+import '../styles/styles.css';
 import './Countdown.css';
 
-import { Clock, Upload } from 'react-feather';
+import Postpone from './Postpone';
+import SendNow from './SendNow';
 
 export default function CountdownSection() {
 
-  const date = '2019-10-29T01:02:03';
+  const date = '2019-11-08T01:02:03';
 
   return (
     <section>
-      <div className="Countdown">
+      <div className="Container">
         <p className="Title">O próximo relatório será enviado automaticamente em </p>
         <div className="Day">
           <Countdown date={date}
@@ -32,16 +34,13 @@ export default function CountdownSection() {
             renderer={props => <span>{props.seconds}</span>}/>
           <p>Segs</p>
         </div>
-      </div>
-      <div className="Action">
-        <button type="submit">
-          <Clock className="Icon"/>
-          <p>Adiar envio</p>
-        </button>
-        <button type="submit">
-          <Upload className="Icon"/>
-          <p>Enviar agora</p>
-        </button>
+      </div >
+
+      <div className="Function">
+
+        <Postpone />
+        <SendNow />
+
       </div>
     </section>
   );

@@ -9,12 +9,10 @@ export default function Login( ) {
     <div className="login-container">
       <form onSubmit={() => {}}>
         <img src={logo} alt="NTS-MA"/>
-        <p>Sistema de Interoperabilidade de 
-          Dados do Telessaúde Maranhão com o 
-          Telessaúde Brasil Redes</p>
+        <p>SIDA</p>
         <input placeholder="Login" />
         <input placeholder="Senha"/>
-        <button className="btn" type="submit">Enviar</button>
+        <button className="ButtonLogin" type="submit">Enviar</button>
       </form>
     </div>
 

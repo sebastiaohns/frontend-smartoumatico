@@ -1,33 +1,13 @@
-.Countdown {
-  width: 40vw;
-  height: auto;
-
-  max-width: 615px;
-  min-width: 470px;
-
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(54, 93, 204, 0.2);
-  
-  padding: 20px;
-}
-
-.Title {
-  font-size: 1.125em;
-  color: #707070;
-  margin-top: 0px;
-}
-
-.Countdown div {
+.Container div {
   display: inline-block;
 }
 
-.Countdown span {
+.Container span {
   font-size: 5em;
   color: #233E8A;
 }
 
-.Countdown div p {
+.Container div p {
   font-size: 1.5em;
   color: #707070;
 }
@@ -36,35 +16,8 @@
   margin: 0px 15px;
 }
 
-.Action {
+.Function {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.Action button {
-  width: 30%;
-  height: 120px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 30px;
-  color: #FFF;
-  font-size: 16px;
-  cursor: pointer;
-  background-image: linear-gradient(to left, #365DCC, #5ECEF8, #365DCC);
-  background-size: 200%;
-  transition: 0.4s;
-}
-
-.Action button:hover {
-  background-position: right;
-}
-
-.Action .Icon {
-  width: 60px;
-  height: 60px;  
-  color: #FFF;
-  margin-right: 0px;
-  padding-top: 10px;
 }
