@@ -12,11 +12,29 @@
   padding: 20px;
 }
 
+section {
+  margin: 20px 0px;
+}
+
 .Title {
   font-size: 1.125em;
   color: #707070;
   margin-top: 0px;
   font-weight: 600;
+}
+
+.Label {
+  flex: 1;
+  text-align: left;  
+  border-bottom: 1px solid #70707044;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.Label p, .Label span {
+  color: #233E8A;
+  font-weight: 600; 
+  font-size: 1em;
 }
 
 .Button {
@@ -133,4 +151,24 @@
   .Button {
     width: 90%;
   }
+
+  .modal-main {
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .Label p {
+    margin-bottom: 5px;
+  }
+
+  .Label span {
+    display: block;
+  }
+
+  .Label span::before {
+    content: attr(data-text);
+  }  
 }

@@ -107,6 +107,13 @@
   outline: 0;
 }
 
+@media (max-width: 728px) {
+  .Data {
+    padding-top: 12px; 
+    padding-bottom: 10px; 
+  }
+}
+
 @media (max-width: 420px) {
 
   .Label p {
@@ -122,8 +129,8 @@
   }
 
   .Data {
-    padding-top: 10px; 
-    padding-bottom: 20px; 
+    padding-top: 19px; 
+    padding-bottom: 12px; 
   }
 
   .Select {

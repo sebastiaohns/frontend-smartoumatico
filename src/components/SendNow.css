@@ -16,6 +16,10 @@
   width: 50%;
 }
 
+.SendNow .Label {
+  border-bottom-width: 0px;
+}
+
 .switch {
   position: relative;
   display: inline-block;

@@ -5,7 +5,42 @@ import './SendNow.css';
 import { Upload, X } from 'react-feather';
 
 export default class SendNow extends Component {
-  state = { show: false }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: false,
+      prof: false,
+      pontos: false,
+      tele: false,
+      educacao: false,
+      objetos: false,
+    };
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+  
+  sendData() {
+    // insert logic to send data here
+    this.setState({ 
+                    show: false,
+                    prof: false,
+                    pontos: false,
+                    tele: false,
+                    educacao: false,
+                    objetos: false,
+                  });
+  }
 
   showModal = () => {
     this.setState({ show: true });
@@ -20,46 +55,90 @@ export default class SendNow extends Component {
       <div className="SendNow">
         <Modal show={this.state.show} handleClose={this.hideModal} >
           <div className="Options">
-            <p className="Title">Selecione as atividades do Núcleo de Telessaúde do Maranhão
-            que devem ser incluídas no relatório de que será enviado AGORA
-            para o SMART</p>
+            <p className="Title">Selecione as atividades
+            que devem ser enviadas AGORA para o SMART</p>
             <div>
-              <p>Profissionais Cadastrados</p>
+              <div className="Label">
+                <p>Profissionais
+                  <span> Cadastrados</span>
+                </p>
+              </div>
               <label className="switch">
-                <input type="checkbox"/>
+                <input
+                  name="prof"
+                  type="checkbox"
+                  checked={this.state.prof}
+                  onChange={this.handleInputChange}
+                />
                 <span className="slider"></span>
               </label>
             </div>
             <div>
-              <p>Pontos Implantados</p>
-              <label class="switch">
-                <input type="checkbox"/>
-                <span class="slider round"></span>
+              <div className="Label">
+                <p>Pontos
+                  <span> Implantados</span>
+                </p>
+              </div>
+              <label className="switch">
+              <input
+                  name="pontos"
+                  type="checkbox"
+                  checked={this.state.pontos}
+                  onChange={this.handleInputChange}
+                />
+                <span className="slider round"></span>
               </label>
             </div>
             <div>
-              <p>Teleconsultorias Produzidas</p>
-              <label class="switch">
-                <input type="checkbox"/>
-                <span class="slider round"></span>
+              <div className="Label">
+                <p>Teleconsultorias
+                  <span> Produzidas</span>
+                </p>
+              </div>
+              <label className="switch">
+                <input
+                  name="tele"
+                  type="checkbox"
+                  checked={this.state.tele}
+                  onChange={this.handleInputChange}
+                />
+                <span className="slider round"></span>
               </label>
             </div>
             <div>
-              <p>Atividades de Tele-educação Produzidas</p>
-              <label class="switch">
-                <input type="checkbox"/>
-                <span class="slider round"></span>
+              <div className="Label">
+                <p>Atividades de
+                  <span> Tele-educação</span>
+                </p>
+              </div>
+              <label className="switch">
+                <input
+                  name="educacao"
+                  type="checkbox"
+                  checked={this.state.educacao}
+                  onChange={this.handleInputChange}
+                />
+                <span className="slider round"></span>
               </label>
             </div>
             <div>
-              <p>Objetos de Aprendizagem Produzidos</p>
-              <label class="switch">
-                <input type="checkbox"/>
-                <span class="slider round"></span>
+              <div className="Label">
+                <p>Objetos de
+                  <span> Aprendizagem</span>
+                </p>
+              </div>
+              <label className="switch">
+                <input
+                  name="objetos"
+                  type="checkbox"
+                  checked={this.state.objetos}
+                  onChange={this.handleInputChange}
+                />
+                <span className="slider round"></span>
               </label>
             </div>
           </div>
-          <button className="ButtonConfirm" type="button" onClick={() => {}}>
+          <button className="ButtonConfirm" type="button" onClick={() => this.sendData()}>
             <p>Confirmar</p>
           </button>
         </Modal>

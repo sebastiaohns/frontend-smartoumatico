@@ -20,19 +20,18 @@ export default class Postpone extends Component {
       <div className="Postpone">
         <Modal show={this.state.show} handleClose={this.hideModal} >
           <div className="Inside">
-          <p className="Title">Adiar o envio do relatório de atividades do Núcleo 
-          de Telessaúde do Maranhão para o SMART em:</p>
+          <p className="Title">Adiar o envio do relatório de atividades para o SMART em:</p>
           <div className="Field">
             <div>
-              <input maxlength="2"/>
+              <input maxLength="2"/>
               <p>Dias</p>
             </div>
             <div>
-            <input maxlength="2"/>
+            <input maxLength="2"/>
               <p>Horas</p>
             </div>
             <div>
-            <input maxlength="2"/>
+            <input maxLength="2"/>
               <p>Min</p>
             </div>
           </div>

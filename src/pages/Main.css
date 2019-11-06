@@ -1,6 +1,6 @@
 .App {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   text-align: center;
   background-color: #F7F7F7;
   display: flex;
@@ -9,9 +9,14 @@
   justify-content: space-around;
 }
 
+@media (min-height: 1024px), (min-width: 1024px) {
+  .App {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 1024px) {
   .App {
-    height: auto;
     flex-direction: column;
   }
 }

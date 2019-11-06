@@ -6,11 +6,13 @@ import Report from '../components/Report';
 
 function App() {
   return (
+    <div className="Main" style={{height: "100vh"}}>
     <div className="App">     
 
       <Report/>
       <Countdown/>
 
+    </div>
     </div>
   );
 }
