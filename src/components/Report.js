@@ -13,28 +13,48 @@ export default function Report() {
         <ul>
           <li>
             <Users className="ListIcon"/>
-            <p className="Label">Profissionais Cadastrados</p>
-            <p>17</p>
+            <div className="Label">
+              <p>Profissionais
+                <span> Cadastrados</span>
+              </p>
+            </div>
+            <p className="Data">17</p>
           </li>
           <li>
             <Flag className="ListIcon"/>
-            <p className="Label">Pontos Implantados</p>
-            <p>34</p>
+            <div className="Label">
+              <p>Pontos
+                <span> Implantados</span>
+              </p>
+            </div>
+            <p className="Data">34</p>
           </li>
           <li>
             <MessageCircle className="ListIcon"/>
-            <p className="Label">Teleconsultorias Produzidas</p>
-            <p>3481</p>
+            <div className="Label">
+              <p>Teleconsultorias
+                <span> Produzidas</span>
+              </p>
+            </div>
+            <p className="Data">3481</p>
           </li>
           <li>
             <Award className="ListIcon"/>
-            <p className="Label">Atividades de Tele-educação</p>
-            <p>597</p>
+            <div className="Label">
+              <p>Atividades de
+                <span> Tele-educação</span>
+              </p>
+            </div>
+            <p className="Data">597</p>
           </li>
           <li>
             <BookOpen className="ListIcon"/>
-            <p className="Label">Objetos de Aprendizagem</p>
-            <p>850</p>
+            <div className="Label">
+              <p>Objetos de
+                <span> Aprendizagem</span>
+              </p>
+            </div>
+            <p className="Data">850</p>
           </li>
         </ul>
       </div>

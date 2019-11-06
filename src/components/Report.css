@@ -11,16 +11,19 @@
 }
 
 .Container li p {
-  border-bottom: 1px solid #70707044;
-  margin-bottom: 0px;
-  padding-bottom: 16px;
   color: #233E8A;
   font-weight: 600; 
   font-size: 1em;
 }
 
-.Container li:last-child p {
+.Container li:last-child p, .Container li:last-child .Label {
   border: none;
+}
+
+.Data {
+  border-bottom: 1px solid #70707044;
+  margin-bottom: 0px;
+  padding-bottom: 20px; 
 }
 
 .ListIcon {
@@ -33,6 +36,15 @@
 .Label {
   flex: 1;
   text-align: left;  
+  border-bottom: 1px solid #70707044;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.Label p, .Label span {
+  color: #233E8A;
+  font-weight: 600; 
+  font-size: 1em;
 }
 
 .BtnReport {
@@ -93,4 +105,37 @@
     1.5em 1.5em;
   background-repeat: no-repeat;
   outline: 0;
+}
+
+@media (max-width: 420px) {
+
+  .Label p {
+    margin-bottom: 5px;
+  }
+
+  .Label span {
+    display: block;
+  }
+
+  .Label span::before {
+    content: attr(data-text);
+  }
+
+  .Data {
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+  }
+
+  .Select {
+    flex-direction: column;
+  }
+
+  .Select select {
+    width: 100%;
+  }
+
+  .BtnReport {
+    width: 100%;
+  }
+  
 }

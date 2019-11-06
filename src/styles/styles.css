@@ -114,4 +114,23 @@
     max-width: 700px;
     margin-top: 50px;
   }
+
+  .Button {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 728px) {
+
+  .Container {
+    width: 80vw;
+    height: auto;
+    max-width: 420px;
+    min-width: 0;    
+  }
+
+  .Button {
+    width: 90%;
+  }
 }

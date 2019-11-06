@@ -25,3 +25,10 @@
 .Postpone {
   width: 50%;
 }
+
+@media (max-width: 728px) {
+
+  .Postpone {
+    width: 100%;
+  }
+}
